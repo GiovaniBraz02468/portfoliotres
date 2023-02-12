@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+.espctop{
+    padding-top: 20px;
+}
+
+.estilobot{
+    background-color:black;
+    padding: 8px;
+    border-radius: 15px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 250ms;
+}
+
+.estilobot:hover{
+    transition: 250ms;
+    color: rgb(255, 255, 255);
+    background-color: blueviolet;
+}
+
+
+.divtext{
+    padding: 10px;
+}
+
+.text-divs{
+    text-align: justify;
+    text-indent: 1em;
+}
+
+@media (max-width: 577px){
+    body{
+        background-color: white;
+        background-image: none;
+    }
+}
+
+.divprojj{
+    padding-bottom: 8px;
+}
+
+.tit{
+    margin-bottom: 15px;
+}
+
+.contcard{
+    margin-bottom: 13px;
+}
+
+
+

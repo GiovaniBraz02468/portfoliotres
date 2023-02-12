@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTOQUE-Z</title>
+
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/corpo.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/projetos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary cornavbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html"><img class="img-nav" src="/img/logo-nav-150.png" alt="">GIOVANI RAFAEL TAVARES BRAZ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </ul>
+                <ul class="navbar-nav espaco mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">PERFIL</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="link-navnav">PROJETOS</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/projetos/sistema.html">Sistemas Web</a></li>
+                                <li><a class="dropdown-item" href="/projetos/sites.html">Sites</a></li>
+                            </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="d-none nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="link-navnav">VISUALIZAR</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#pessoal">PESSOAL</a></li>
+                            <li><a class="dropdown-item" href="#academico">ACADÊMICO</a></li>
+                            <li><a class="dropdown-item" href="#profissional">PROFISSIONAL</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contatos/contato.html">CONTATOS</a>
+                    </li>
+
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+      <!--CORPO: INICIO-->
+      <div class="container">
+            <div class="divcorpo espctop">
+                <h3 class="text-center tit"><i class="bi bi-pc-display"></i>ESTOQUE - Z</h3>
+                <div class="row align-items-center divprojj">
+                    <div class="col-12 col-md-6 text-center">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/4YT0oyGPCtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-12 col-md-6 divtext">
+                        <h4>DESCRIÇÃO:</h4>
+                        <p class="text-divs">O projeto "ESTOQUE - Z" foi desenvolvido com o propósito de ajudar a administrar pequenas empresa que contêm saída e entrada frequente em seu estoque, fazendo todo esse processo de forma descomplicada, cadastrando o produto, com ou sem foto, escolhendo seu nome e descrição, gerando um código, que o usuário vai utilizar para poder gerar estoque.</p>
+                        <p class="text-divs">Após percorrer todas as etapas de cadastro do produto, é possível cadastrar seu estoque, precisando somente do código, o valor inicial no estoque e valor unitário. Assim que acabar a etapa de cadastro de estoque, é possível fazer a retirada e entrada de itens.</p>
+                    </div>
+                </div>
+                <div class="divprojj">
+                    
+                    <h4>INFORMAÇÕES:</h4>
+                    <p>Versão: 1 <br>Tecnologias: Laravel, PHP e MySql <br>Tempo médio de desenvolvimento: 12H <br></p>
+                </div>
+            </div>
+      </div>
+
+      <div class="smoothscroll-top">
+            <span class="scroll-top-inner">
+                <i class="fa fa-2x fa-arrow-circle-up"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                  </svg></i>
+            </span>
+        </div>
+      <!--CORPO: FIM-->
+
+      <script src="/js/bootstrap.bundle.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+      <script>
+        $(function(){
+            $(document).on( 'scroll', function(){
+                if ($(window).scrollTop() > 100) {
+                    $('.smoothscroll-top').addClass('show');
+                } else {
+                    $('.smoothscroll-top').removeClass('show');
+                }
+            });
+            $('.smoothscroll-top').on('click', scrollToTop);
+        });
+        
+        function scrollToTop() {
+            verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+            element = $('body');
+            offset = element.offset();
+            offsetTop = offset.top;
+            $('html, body').animate({scrollTop: offsetTop}, 0, 'linear').animate({scrollTop:25},0).animate({scrollTop:0},0) .animate({scrollTop:0},0);
+        }
+      </script>
+</body>
+</html>
