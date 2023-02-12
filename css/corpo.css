@@ -67,7 +67,7 @@
 
 .parallax {
     /* Coloque a imagem a ser usada como background */
-    background-image: url("/midia/fundoum.jpg");
+    background-image: url("../midia/fundoum.jpg");
     
     /* Defina uma altura para a visão que o usuário terá da imagem */
 
@@ -103,7 +103,7 @@
     }
 
     .parallax{
-        background-image: url("/midia/fundodois.png");
+        background-image: url("../midia/fundodois.png");
         background-position: initial;
         background-size: cover;
     }
